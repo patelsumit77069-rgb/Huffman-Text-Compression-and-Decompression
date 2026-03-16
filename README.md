@@ -1,7 +1,7 @@
 #### Huffman-Text-Compression-and-Decompression
 
 <p>Text files can be compressed to make them smaller and faster to send, and unzipping files on devices has a low overhead. The process of    encoding involves changing the representation of a file so that the (binary) compressed output takes less space to store and takes less time to transmit while retaining the ability to reconstruct the original file exactly from its compressed representation. Text files can be of various #file types, such as HTML, JavaScript, CSS, .txt, and so on. Text compression is required because uncompressed data can take up a lot of space, #which is inconvenient for device storage and file sharing.</p>
-### Text Compression :
+<h3>Text Compression :</h3>
 The size of the text file can be reduced by compressing it, which converts the text to a smaller format that takes up less space. It typically
 works by locating similar strings/characters within a text file and replacing them with a temporary binary representation to reduce the overall file size.
 <p>Lossless compression can restore all elements of a file during decompression without sacrificing data and quality.</p>
@@ -12,7 +12,7 @@ works by locating similar strings/characters within a text file and replacing th
 <p>It then extracts two minimum frequency characters and adds them as nodes to a dummy root.</p>
 <p>The value of this dummy root is the combined frequency of its nodes and this root node is added back to the Min-heap.</p>
 <p>The procedure is then repeated until there is only one element left in the Min-heap.</p>
-### Decompressing the Compressed Text :
+<h3>Decompressing the Compressed Text :<h3>
 <p>The compressed file is opened, and the number of unique characters and the total number of characters in the file are retrieved.</p>
 <p>The characters and their binary codes are then read from the file. We can recreate the Huffman tree using this.</p>
 <p>For each binary code:</p> 

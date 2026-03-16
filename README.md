@@ -12,12 +12,12 @@ works by locating similar strings/characters within a text file and replacing th
 <p>It then extracts two minimum frequency characters and adds them as nodes to a dummy root.</p>
 <p>The value of this dummy root is the combined frequency of its nodes and this root node is added back to the Min-heap.</p>
 <p>The procedure is then repeated until there is only one element left in the Min-heap.</p>
-<h3>Decompressing the Compressed Text :<h3>
+<h3>Decompressing the Compressed Text :</h3>
 <p>The compressed file is opened, and the number of unique characters and the total number of characters in the file are retrieved.</p>
 <p>The characters and their binary codes are then read from the file. We can recreate the Huffman tree using this.</p>
 <p>For each binary code:</p> 
-<p>1.A left edge is created for 0, and a right edge is created for 1.</p> 
-<p>2.Finally, a leaf node is formed and the character is stored within it.</p>
-<p>3.This is repeated for all characters and binary codes. The Huffman tree is thus recreated in this manner.</p>
-<p>4.The remaining file is now read bit by bit, and the corresponding 0/1 bit in the tree is traversed. The corresponding character is written into the decompressed file as soon as a leaf node is encountered in the tree.</p>
-<p>5.Step 4 is repeated until the compressed file has been read completely.</p> 
+<p>1. A left edge is created for 0, and a right edge is created for 1.</p> 
+<p>2. Finally, a leaf node is formed and the character is stored within it.</p>
+<p>3. This is repeated for all characters and binary codes. The Huffman tree is thus recreated in this manner.</p>
+<p>4. The remaining file is now read bit by bit, and the corresponding 0/1 bit in the tree is traversed. The corresponding character is     written into the decompressed file as soon as a leaf node is encountered in the tree.</p>
+<p>5. Step 4 is repeated until the compressed file has been read completely.</p> 

@@ -145,8 +145,9 @@ void buildHuffmanTree(string text)
 // Huffman coding algorithm
 int main()
 {
-	string text = "Huffman coding is a data compression algorithm.";
-
+	string text;
+	cout<<"Enter the string to compress"<<endl
+    cin>>text;
 	buildHuffmanTree(text);
 
 	return 0;
